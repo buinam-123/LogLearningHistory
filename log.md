@@ -4,3 +4,5 @@
 - `cố gắng học được nhiều hơn để không phí thời gian`
 - learning 
     + git rm -r cache folder/file..... Xóa `Tham số --cached cực kỳ quan trọng để không làm mất dữ liệu thật trên máy bạn`
+    
+    + 1 dự án đầu tiên: khi ta "git add" lần đầu tiên thì lệnh add đẩy dữ liệu từ máy tính (Working Directory) lên Staged, ở nơi đây nó sẽ lưu những thay đổi
