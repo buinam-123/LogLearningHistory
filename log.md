@@ -38,28 +38,28 @@
                 
         + Sau đó ta đẩy lên "Remote Repo" bằng `git push` <Ở Phần 2>
     + Bài tập: 
-        # 1. Tạo repo
+        - 1. Tạo repo
         mkdir hoc-git && cd hoc-git
         git init
         git status                         # Quan sát: "No commits yet", không có gì
 
-        # 2. Tạo .gitignore trước tiên
+        - 2. Tạo .gitignore trước tiên
         echo "secret.txt" > .gitignore
         echo "mat khau la 123" > secret.txt
         git status                         # Quan sát: chỉ thấy .gitignore, KHÔNG thấy secret.txt → ignore hoạt động
 
-        # 3. Commit đầu tiên
+        - 3. Commit đầu tiên
         git add .gitignore
         git commit -m "Thêm .gitignore"
 
-        # 4. Tạo file và quan sát từng khu vực
+        - 4. Tạo file và quan sát từng khu vực
         echo "<h1>Xin chao</h1>" > index.html
         git status                         # index.html: Untracked (đỏ)
         git add index.html
         git status                         # index.html: Changes to be committed (xanh)
         git commit -m "Tạo trang chủ"
 
-        # 5. Sửa file, so sánh diff 2 kiểu
+        - 5. Sửa file, so sánh diff 2 kiểu
         echo "<p>Toi la Nam Tron</p>" >> index.html
         git diff                           # thấy dòng +<p>... 
         git diff --staged                  # TRỐNG — vì chưa add
@@ -68,7 +68,7 @@
         git diff --staged                  # thấy dòng +<p>...
         git commit -m "Thêm lời giới thiệu vào trang chủ"
 
-        # 6. Xem lịch sử
+        - 6. Xem lịch sử
         git log --oneline                  # thấy 3 commit
         git show HEAD~1                    # xem commit "Tạo trang chủ"
         --------------------------DONE------------------------------------------
