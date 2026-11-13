@@ -38,7 +38,7 @@
                 
         + Sau đó ta đẩy lên "Remote Repo" bằng `git push` <Ở Phần 2>
     + Bài tập: 
-        - 1. Tạo repo
+        <!-- - 1. Tạo repo
         mkdir hoc-git && cd hoc-git
         git init
         git status                         # Quan sát: "No commits yet", không có gì
@@ -70,8 +70,9 @@
 
         - 6. Xem lịch sử
         git log --oneline                  # thấy 3 commit
-        git show HEAD~1                    # xem commit "Tạo trang chủ"
-        --------------------------DONE------------------------------------------
+        git show HEAD~1                    # xem commit "Tạo trang chủ" -->
+
+----------------------------------DONE------------------------------------------
         + Câu hỏi thêm: 
             - Ở bước 5, tại sao git diff và git diff --staged cho kết quả ngược nhau trước và sau add?
                 -> Bỏi vì khi trước khi add thì working directory nhận thấy sự thay đổi và khi ta `git diff` thì sẽ nhận thấy sự thay đổi nó thêm một dòng mới (bản thân git status cũng thấy) và vì đây là trước khi add nên chưa có gì được đẩy lên Staged area nên là khi `git diff --staged`  sẽ không thấy gì hết, nhưng sau khi đẩy lên Staged (bằng add) thì phần working directory sẽ không còn thấy sự thay đổi đó, do đó khi ta `git diff` thì sẽ không thấy sự thay đổi nào mới nữa, mà nó chuyển lên cho Staged lo liệu, khi này ta dùng `git diff --staged` thì nó phát hiện ra sự thay đổi thêm một dòng mới và nó báo ra. nếu như ta commit là khi `git diff --staged` chẳng còn cái quái gì nữa.
