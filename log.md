@@ -131,3 +131,9 @@
 ### 5. Trường hợp 5: Nhiều người cùng sửa một file (học sau)
 
 - `git push origin --delete test` xóa trực tiếp test branch trên remote, local vẫn còn ko ảnh hướng
+
+# Ngày 14/11/2005 Bùi Thành Nam học tiếp github <"làm đi có đường hướng rồi, chỉ làm thôi, đừng có nghĩ nhiều">
+  1. Bài 3.4 git fetch - tải về thông tin mới chưa gộp
+    ```bash
+      git fetch
+    ```
